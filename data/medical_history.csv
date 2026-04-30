@@ -1,0 +1,8 @@
+PatientID,Condition,Diagnosis,Date
+P001,Fever and Cold,Seasonal Flu,2026-01-15
+P001,Back Pain,Lumbar Strain,2026-03-10
+P002,Skin Rash,Allergic Dermatitis,2026-02-20
+P003,Chest Pain,Mild Angina,2025-12-05
+P003,High BP,Hypertension Stage 1,2026-01-22
+P003,Diabetes,Type 2 Diabetes,2026-04-01
+P005,Knee Pain,Ligament Tear,2026-03-28

@@ -1,0 +1,7 @@
+AppointmentID,PatientID,DoctorID,SlotID,Time
+A001,P001,D001,1,12:00-12:30
+A002,P001,D001,2,12:30-1:00
+A003,P001,D001,10,4:30-5:00
+A004,P001,D002,1,12:00-12:30
+A005,P001,D001,3,1:00-1:30,"Fever and Cold (Seasonal Flu) | Back Pain (Lumbar Strain)"
+A006,P001,D001,6,2:30-3:00,"Fever and Cold (Seasonal Flu) | Back Pain (Lumbar Strain)"

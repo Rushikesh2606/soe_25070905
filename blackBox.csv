@@ -1,0 +1,16 @@
+Test Case ID,Test Case Scenario,PreCondition,Test Steps,Input,Expected Results,Actual Results,Pass/Fail
+TC_BB_01,Valid appointment booking (EP - valid),Doctor & patient exist,Open UI → Select slot → Submit,Select 2:00–2:30 PM slot,Appointment successfully booked,Same as expected,Pass
+TC_BB_02,Invalid doctor (EP - invalid),Patient exists,Select slot → Submit,Invalid doctorId,Error: Doctor not found,Same as expected,Pass
+TC_BB_03,Invalid patient (EP - invalid),Doctor exists,Select slot → Submit,Invalid patientId,Error: Patient not found,Same as expected,Pass
+TC_BB_04,Select available slot (EP - valid),Doctor available,Select 3:00–3:30 PM → Submit,3:00–3:30 PM slot,Booking successful,Same as expected,Pass
+TC_BB_05,Select already booked slot (EP - invalid),Slot already booked,Select same slot → Submit,2:30–3:00 PM slot,Error: Slot unavailable,Same as expected,Pass
+TC_BB_06,Boundary - first slot selection (BVA),Slots available,Select first slot → Submit,12:00–12:30 PM,Booking successful,Same as expected,Pass
+TC_BB_07,Boundary - last slot selection (BVA),Slots available,Select last slot → Submit,4:30–5:00 PM,Booking successful,Same as expected,Pass
+TC_BB_08,No slot selected (EP - invalid),Slots displayed,Submit without selecting slot,No slot selected,Validation error: Select a slot,Same as expected,Pass
+TC_BB_09,Selecting non-existent slot (BVA invalid),Slots predefined in UI,Attempt invalid selection,5:00 PM (not a valid slot),Slot not selectable / Error,Same as expected,Pass
+TC_BB_10,Slot list displays exactly 10 slots (BVA),System loaded,Open booking UI,View slot list,10 slots from 12 PM to 5 PM displayed,Same as expected,Pass
+TC_BB_11,New patient selecting valid slot (EP - valid),Doctor exists,Select slot → Submit,1:00–1:30 PM slot,Booking successful,Same as expected,Pass
+TC_BB_12,Duplicate booking same slot (EP - invalid),Slot already booked once,Select same slot again,3:30–4:00 PM slot,Error: Slot unavailable,Same as expected,Pass
+TC_BB_13,Selecting middle slot (EP - valid),Slots available,Select mid slot → Submit,2:30–3:00 PM slot,Booking successful,Same as expected,Pass
+TC_BB_14,All slots booked (EP - invalid),All 10 slots booked,Try selecting any slot,Any slot,Error: No slots available,Same as expected,Pass
+TC_BB_15,Slot becomes unavailable after selection (EP - invalid),Slot booked by another user,Select slot → Submit,Recently booked slot,Error: Slot unavailable,Same as expected,Pass
